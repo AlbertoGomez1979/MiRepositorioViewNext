@@ -2,6 +2,9 @@ package training.lab1;
 
 public class Cadenas {
 
+	//Se le hace un cambio para ver el commit
+	
+	
 	public static void main(String[] args) {
 		//Manejo de Strings
 		String myName = "Hello world, " + "Mi nombre es Alberto";
@@ -11,17 +14,17 @@ public class Cadenas {
 		//Longitud de cadena
 		System.out.println("hello world".length());
 		
-		//Convertir a minúscula
+		//Convertir a minï¿½scula
 		System.out.println("HELLO WORLD".toLowerCase());
 		
-		//Pasar a mayúsculas
+		//Pasar a mayï¿½sculas
 		System.out.println("hello world".toUpperCase());
 		
-		//Extraer una parte de la cadena a partir de una posición
+		//Extraer una parte de la cadena a partir de una posiciï¿½n
 		String first = "hello world".substring(6);
 		System.out.println(first);
 		
-		//Extraer una parte de la cadena a partir de una posición y acotando la posicion final
+		//Extraer una parte de la cadena a partir de una posiciï¿½n y acotando la posicion final
 		String message= "hello world";
 		String second = message.substring(1,8);
 		System.out.println(second);
