@@ -11,5 +11,10 @@ public interface Conducible { // Conducible
     boolean retroceder(int distancia);
 
     boolean parar();
+    
+    
+    
+    
+    
 
 }
