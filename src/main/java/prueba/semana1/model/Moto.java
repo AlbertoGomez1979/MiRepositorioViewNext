@@ -1,10 +1,19 @@
-package prueba.semana1;
+package prueba.semana1.model;
+
+import javax.persistence.*;
+
+import prueba.semana1.model.Vehiculo;
 
 /**
  * Moto.java Clase para el objecto Moto
  */
+@Entity
+@Table(name="moto")
 public class Moto extends Vehiculo {
+	
+	@Column(name="tipoMoto")
     private String tipoMoto;
+	
     protected static final String TIPO = "Moto";
 
     /**

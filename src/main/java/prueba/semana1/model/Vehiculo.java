@@ -1,21 +1,48 @@
-package prueba.semana1;
+package prueba.semana1.model;
 
 import java.util.Date;
+
+import javax.persistence.*;
+
+
+import prueba.semana1.Conducible;
 
 /**
  * Vehiculo.java Clase para el objecto Vehiculo
  */
+
+@MappedSuperclass
 public abstract class Vehiculo implements Conducible {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	protected int id;
+	
+	@Column(name="color")
     protected String color;
+	
+	@Column(name="marca")
     protected String marca;
+	
+	@Column(name="precio")
     protected String precio;
+	
+	@Column(name="matricula")
     protected String matricula;
+	
+	@Column(name="numRuedas")
     protected int numRuedas;
+
+	@Column(name="arrancado")
     private boolean arrancado = false;
+
     protected static final String TIPO = "Vehiculo";
 
     // Variables del viaje
+    @Column(name="horaInicio")
     protected Date horaInicio;
+
+    @Column(name="disanciaRecorrida")
     protected int distanciaRecorrida = 0;
 
     /**
@@ -27,8 +54,7 @@ public abstract class Vehiculo implements Conducible {
      * @param matricula matricula del vehiculo
      * @param numRuedas numero de ruedas del vehiculo
      */
-    protected Vehiculo(String color, String marca, String precio, String matricula, int numRuedas) {
-
+    protected Vehiculo(String color, String marca, String precio, String matricula, int numRuedas) {   
         this.numRuedas = numRuedas;
         this.color = color;
         this.marca = marca;
@@ -46,8 +72,18 @@ public abstract class Vehiculo implements Conducible {
         System.out.println("La matricula es: " + matricula);
         System.out.println("El precio es: " + precio);
     }
-
+    
+    
+    
     /**
+     * Devuelve el id
+     * @return int id
+     */
+    public int getId() {
+		return id;
+	}
+
+	/**
      * Devuelve el color.
      *
      * @return String color
@@ -229,5 +265,6 @@ public abstract class Vehiculo implements Conducible {
         }
 
     }
+ 
 
 }

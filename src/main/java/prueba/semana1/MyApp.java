@@ -1,5 +1,10 @@
 package prueba.semana1;
 
+import javax.persistence.EntityManager;
+
+import prueba.semana1.jpa.persistence.JpaPersistence;
+import prueba.semana1.model.Coche;
+
 /**
  * MyApp.java
  *
@@ -15,10 +20,18 @@ public class MyApp {
      * @param args linea de comandos
      */
     public static void main(String[] args) {
-        // Creamos 3 vehiculos, uno de cada tipo, ademas de declara las variables
-        // necesarias
+
+    	//EntityManager entity = JpaPersistence.getEntityManagerfactory().createEntityManager();
+    	//Coche coche = new Coche("Rojo", "Toyota", "20.000 €", "SADF12", "Manual");      
+    	
+    	
         VehiculoManager vehiculoManager = new VehiculoManager();
         vehiculoManager.createVehiculo();
+        
+//        entity.getTransaction().begin(); //Inicia transacción
+//       	entity.persist(coche); //guarda en base de datos
+//		entity.getTransaction().commit(); //Aquí termina guardando todos los cambios
+		
         while (!vehiculoManager.runAccion()) {
         }
 

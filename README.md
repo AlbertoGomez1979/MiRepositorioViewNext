@@ -1,8 +1,8 @@
-<!-- title: Clase Barco -->
+<!-- title: Ejercicio semana 2 -->
 
-- [1. Clase Barco](#1-clase-barco)
+- [1. Ejercicio "Escuela" de la semana 2](#1-ejercicio-"Escuela"-de-la-semana-2)
   - [1.1. Instalación](#11-instalación)
-  - [1.2. Descripción](#12-descripción)
+  - [1.2. Descripción](#1.2-descripcion)
   - [1.3. Funcionalidades](#13-funcionalidades)
   - [1.4. Uso](#14-uso)
   - [1.5. Contribuir](#15-contribuir)
@@ -10,46 +10,51 @@
   - [1.7. Créditos y atribuciones](#17-créditos-y-atribuciones)
   - [1.8. License](#18-license)
 
-# 1. Clase Barco
+# 1. Ejercicio "Escuela" de la semana 2
 
-**Barco**
-
-Este es un proyecto Java que define la clase Barco que extiende la clase Vehiculo.
+**Escuela**
+Este es un proyecto Java que define la clase Coche, moto o barco que extiende de la clase abstracta Vehiculo. Al crear cada clase se crea una tabla usando hibernate.
 
 ## 1.1. Instalación
 
 Si hubiese un método para instalar o ejecutar el proyecto, se indicaría aquí.
 
-## 1.2. Descripción
+## 1.2. Descripcion
+Para la descripción del proyecto voy a usar el ejemplo de la clase Coche:
 
-La clase Barco representa un vehículo acuático y se utiliza para instanciar objetos que contienen información sobre el color, la marca, el precio, la matrícula y el tipo de barco. La clase también tiene un método para arrancar el barco y establecer la hora de inicio del viaje.
-Funcionalidades
+La clase Coche representa un vehículo terrestre y se utiliza para instanciar objetos que contienen información sobre el color, la marca, el precio, la matrícula, el tipo de marchas y el tipo de coche. La clase también hereda los métodos para arrancar el coche y establecer la hora de inicio del viaje, entre otros.
 
-## 1.3. Funcionalidades
 
-La clase Barco tiene las siguientes funcionalidades:
+## 1.3. Funcionalidades de las clases
 
-    Constructor: Crea una instancia de Barco con un color, marca, precio, matrícula y tipo de barco.
-    getTipoBarco(): Devuelve el tipo de barco.
-    arrancar(): Arranca el barco y establece la hora de inicio del viaje. Si el barco ya está en marcha, muestra un mensaje de aviso.
-    retroceder(int metros): Retrocede el barco la cantidad de metros indicada. Si el barco no está en marcha, muestra un mensaje de aviso.
-    parar(): Para el barco y muestra la hora de inicio y fin del viaje. Si el barco no está en marcha, muestra un mensaje de aviso.
-    avanzar(int distancia): Avanza el barco la cantidad de metros indicada. Si el barco no está en marcha, muestra un mensaje de aviso.
-    imprimirDatos(): Muestra los datos del barco.
+La clase Coche tiene las siguientes funcionalidades:
+
+    Constructor: Crea una instancia de Coche con un color, marca, precio, matrícula ,tipo de marchas y tipo de coche.
+    setTipoMarcha(): manual o automatica.
+    getTipoMarcha(): Devuelve el tipo de marcha.
+    getTipoCoche(): Devuelve el tipo de coche.
+    setTipoCoche(): Deportivo o familiar
+    Los métodos heredados son:.
+    arrancar(): Arranca el coche y establece la hora de inicio del viaje. Si el coche ya está en marcha, muestra un mensaje de aviso.
+    retroceder(int metros): Retrocede el coche la cantidad de metros indicada. Si el coche no está en marcha, muestra un mensaje de aviso.
+    parar(): Para el coche y muestra la hora de inicio y fin del viaje. Si el coche no está en marcha, muestra un mensaje de aviso.
+    avanzar(int distancia): Avanza el coche la cantidad de metros indicada. Si el coche no está en marcha, muestra un mensaje de aviso.
+    imprimirDatos(): Muestra los datos del coche.
 
 ```java
-Barco barco = new Barco("Azul", "Marca", "5000", "1234ABC", "Tipo de Barco");
-String tipoBarco = barco.getTipoBarco();
-barco.arrancar();
+Coche coche = new Coche("Rojo", "Toyota", "20.000 €", "SADF12", "Manual");
+String tipoMarcha = coche.getTipoMarchas();
+coche.arrancar();
 ```
+	
 
 ## 1.4. Uso
 
-TODO: Cómo se debe usar el proyecto.
+Cómo se debe usar el proyecto:
+Al inicio del programa se pide la creación de un tipo de vehículo, el vehículo creado se guarda en base de datos usando hibernate y después se interactúa con el objeto creado, pudiendo elegir entre varias acciones.
 
-**Uso de la clase Barco**
-
-Para utilizar la clase Barco, primero debe instanciar un objeto pasando los argumentos adecuados al constructor. Luego, puede llamar a los métodos getTipoBarco() y arrancar() según sea necesario.
+**Uso de la clase Coche**
+Para utilizar la clase Coche, primero debe instanciar un objeto pasando los argumentos adecuados al constructor. Luego, puede llamar a los métodos getTipoMarcha() y gett/setTipoCoche() según sea necesario.
 
 ## 1.5. Contribuir
 
@@ -72,6 +77,7 @@ Para utilizar la clase Barco, primero debe instanciar un objeto pasando los argu
 
 Lead Developer - Antoni (@antoni_dev)
 Mentor - Carlos (@blah_blah)
+Compañero - Alberto(@Compi)
 
 ## 1.8. License
 

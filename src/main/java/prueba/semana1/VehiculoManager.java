@@ -1,11 +1,22 @@
 package prueba.semana1;
 
+import javax.persistence.EntityManager;
+
+import prueba.semana1.jpa.persistence.JpaPersistence;
+import prueba.semana1.model.Barco;
+import prueba.semana1.model.Coche;
+import prueba.semana1.model.Moto;
+import prueba.semana1.model.Vehiculo;
+
+
 /**
  * VehiculoManager
  * Se encarga de gestionar los Vehiculos.
  */
 public class VehiculoManager {
+	
     private Vehiculo vehiculo;
+    
 
     /**
      * Método para crear un Vehiculo siguiendo el input del usuario.
@@ -15,7 +26,8 @@ public class VehiculoManager {
     public Vehiculo createVehiculo() {
 
         InputHandler inputHandler = new InputHandler();
-
+        
+        
         Integer tipoVehiculo = inputHandler.getTipoVehiculo();
 
         switch (tipoVehiculo) {
@@ -39,22 +51,48 @@ public class VehiculoManager {
 
     }
 
+    
     private Vehiculo createCoche() {
-        Coche coche = new Coche("Rojo", "Toyota", "20.000 €", "SADF12", "Manual");
+    	
+    	EntityManager entity = JpaPersistence.getEntityManagerfactory().createEntityManager();
+    	
+        Coche coche = new Coche("Rojo", "Toyota", "20.000 €", "SADF12", "Manual", "Deportivo");
+        
+        entity.getTransaction().begin(); //Inicia transacción
+		entity.persist(coche); //guarda en base de datos
+		entity.getTransaction().commit(); //Aquí termina guardando todos los cambios
+        
         System.out.println(
                 "Se ha creado un vehículo de tipo Coche ");
         return coche;
     }
+    
 
     private Vehiculo createMoto() {
+    	
+    	EntityManager entity = JpaPersistence.getEntityManagerfactory().createEntityManager();
+    	
         Moto moto = new Moto("Negro", "Yamaha", "50.000 €", "YTUI78", "Motocross");
+        
+        entity.getTransaction().begin(); //Inicia transacción
+		entity.persist(moto); //guarda en base de datos
+		entity.getTransaction().commit(); //Aquí termina guardando todos los cambios
+		
         System.out.println(
                 "Se ha creado un vehículo de tipo Moto ");
         return moto;
     }
 
     private Vehiculo createBarco() {
+    	
+    	EntityManager entity = JpaPersistence.getEntityManagerfactory().createEntityManager();
+    	
         Barco barco = new Barco("Rojo", "Toyota", "20.000 €", "VBNM76", "Yate");
+        
+        entity.getTransaction().begin(); //Inicia transacción
+		entity.persist(barco); //guarda en base de datos
+		entity.getTransaction().commit(); //Aquí termina guardando todos los cambios
+		
         System.out.println(
                 "Se ha creado un vehículo de tipo Barco ");
         return barco;
