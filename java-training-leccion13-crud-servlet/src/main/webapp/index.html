@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Administrar Usuarios</title>
+</head>
+<body>
+
+	<h1>Agregar Nuevo Usuario</h1>
+	
+	<form action="nuevo" method="post">
+		<table>
+			<tr>
+				<td>Nombre:</td>
+				<td><input type="text" name="nombre" /></td>
+			</tr>
+			<tr>
+				<td>Nombre de usuario:</td>
+				<td><input type="text" name="nombreusuario" /></td>
+			</tr>
+			<tr>
+				<td>Dni:</td>
+				<td><input type="text" name="dni" /></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><input type="email" name="email" /></td>
+			</tr>
+			<tr>
+				<td>Contraseña:</td>
+				<td><input type="text" name="password" /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="Guardar" /></td>
+			</tr>
+		</table>
+	</form>
+
+	<br />
+	<a href="ListServlet">Ver todos los usuarios</a>
+
+</body>
+</html>

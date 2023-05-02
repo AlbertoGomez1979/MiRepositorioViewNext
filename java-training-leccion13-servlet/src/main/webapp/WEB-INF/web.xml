@@ -1,0 +1,20 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+  	<servlet-name>TrainingServlet</servlet-name>
+  	<display-name>TrainingServlet</display-name>
+  	<description></description>
+  	<servlet-class>training.lab.servlet.TrainingServlet</servlet-class><!-- RUTA DEL PAQUETE DEL SERVLET -->
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>TrainingServlet</servlet-name><!-- NOMBRE DEL SERVLET -->
+  	<url-pattern>/TrainingServlet/*</url-pattern><!-- ACCESO URL -->
+  </servlet-mapping>
+  
+</web-app>

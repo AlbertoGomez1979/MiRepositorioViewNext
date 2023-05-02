@@ -19,7 +19,7 @@ public class Cuenta {
 	private String usuario;
 	
 	/*  
-	 * @ManyToOne aqui la relación es bidireccional quiere decir que Mucha Cuentas,
+	 * @ManyToOne aqui la relación es bidireccional quiere decir que muchas Cuentas,
 	 * están relacionadas a un banco.
 	 * FetchType.LAZY. Esto significa que los datos de la relación entre Banco y Cuenta 
 	 * solo se cargarán cuando se acceda a la propiedad banco.
