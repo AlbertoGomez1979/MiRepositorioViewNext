@@ -55,6 +55,7 @@ public class ListServlet extends HttpServlet {
     	//SE VA CONSTRUYENDO LA TABLA EN HTML DE MANERA DINÁMICA.
      out.print("<tr><td>"+e.getIdUsuario()+"</td><td>"+e.getNombre()+"</td><td>"+e.getNombreUsuario()+"</td><td>"+e.getDni()+"</td><td>"+e.getEmail()+"</td><td>"+e.getPassword()
      	+"</td><td><a href='EditarServlet?idusuario="+e.getIdUsuario()+"'>Editar</a></td><td><a href='EliminarServlet?idusuario="+e.getIdUsuario()+"'>Eliminar</a></td></tr>");  
+     	//EL NOMBRE DEL ID DEBE COINCIDIR CON EL DE LAS CLASES ACTUALIZAR Y EDITAR
     }
     
     out.print("</table>");  

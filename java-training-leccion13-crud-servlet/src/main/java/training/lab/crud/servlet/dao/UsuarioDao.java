@@ -129,13 +129,15 @@ public class UsuarioDao {
 			
 			//Recorremos el resulset 
 			if (rs.next()) {
-
+				
+				//LA NUMERACION TIENE QUE COINCIDIR CON SU POSICION EN LA COLUMNA DE LA BASE DE DATOS
 				u.setIdUsuario(rs.getInt(1));
 				u.setNombre(rs.getString(2));
 				u.setNombreUsuario(rs.getString(3));
-				u.setDni(rs.getString(4));
+				u.setPassword(rs.getString(4));
 				u.setEmail(rs.getString(5));
-				u.setPassword(rs.getString(6));
+				u.setDni(rs.getString(6));
+				
 
 			}
 			

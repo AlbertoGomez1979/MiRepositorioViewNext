@@ -29,7 +29,7 @@ public class EliminarServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)   
             throws ServletException, IOException { 
     	
-    	//EL PARAMETRO TIENE QUE COINCIDIR CON EL PARAMETRO ID DE CUANDO SE VA CONSTRUYENDO LA TABLA
+    	//EL PARAMETRO TIENE QUE COINCIDIR CON EL PARAMETRO ID DE CUANDO SE VA CONSTRUYENDO LA TABLA EN EL LISTSERVLET
        String sid = request.getParameter("idusuario");  
        int id = Integer.parseInt(sid);
        
