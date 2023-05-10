@@ -10,12 +10,10 @@ public class Empleado {
 	
 	
 	public Empleado() {
-		super();
 	}
 
 
 	public Empleado(int id, String nombre, String apellido, String edad, String salario) {
-		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;

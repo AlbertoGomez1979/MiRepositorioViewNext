@@ -1,4 +1,4 @@
-package com.viewnext.curso.dominio;
+package com.viewnext.curso.domain;
 
 import java.util.List;
 

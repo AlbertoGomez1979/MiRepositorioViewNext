@@ -20,7 +20,7 @@ public class EmpleadoService {
 	
 	private static WebTarget resource = ClientBuilder.newBuilder().build().target("https://mocki.io/v1/c2a4fffe-4b88-465c-8e56-47accba12e6d");//URL DEL SERVICIO EXTERNO
 	
-	//LISTAR LOS EMPLEADOS
+	//METODO PARA LISTAR LOS EMPLEADOS
 	public static List<Empleado> fetchEmpleado(){
 		
 		//OBTENEMOS LOS RESULTADOS Y LO ESTABLECEMOS AL OBJETO EMPLEADOLIST
