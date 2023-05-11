@@ -1,0 +1,102 @@
+/* Definición de la fuente y el color de fondo para el cuerpo del documento */
+body {
+  font-family: Arial, sans-serif;
+  background-color: greenyellow;
+}
+/* Definición de los estilos para los encabezados */
+h1, h2 {
+  font-family: Georgia, serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  position: relative;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  padding-left: 25rem;
+  font-size: 18px;
+  color: crimson;
+}
+/* Definición de los estilos para los enlaces */
+a {
+  color: #0011ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+/* Definición de los estilos para las listas */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+ol {
+    list-style: decimal;
+    padding-left: 40px;
+}
+
+div {
+    border: 1px solid black;
+    padding: 25px 50px 75px 100px;
+    background-color: lightblue;
+    width: 50%;
+}
+
+p {
+    text-align: center;
+    color: red;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+h1.center {
+    text-align: center;
+    color: violet;
+}
+
+#lista1{
+    color: HSL(0, 100%, 50%);
+    font-size: 16px;
+    padding-left: 25rem;
+}
+
+hr{
+    background-color: black;  
+}
+
+.ems li {
+    font-size: 1.3em;
+  }
+  
+.rems li {
+    font-size: 1.3rem;
+}
+
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+  } 
+  
+  div.absolute {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+  }

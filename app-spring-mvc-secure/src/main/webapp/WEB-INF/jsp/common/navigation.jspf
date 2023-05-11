@@ -1,0 +1,10 @@
+
+<nav role="navigation" class="navbar navbar-default">
+	
+	<div>
+		
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="/app-spring-mvc-secure/logout">Logout</a></li>
+		</ul>
+	</div>
+</nav>

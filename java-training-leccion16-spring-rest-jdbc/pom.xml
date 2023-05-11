@@ -11,6 +11,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	
+	<packaging>jar</packaging>
 	<name>rest-api-jdbc</name>
 	
 	<description>Spring Api Rest Jdbc</description>
