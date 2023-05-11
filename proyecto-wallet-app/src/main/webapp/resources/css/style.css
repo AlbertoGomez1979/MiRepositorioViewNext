@@ -1,0 +1,54 @@
+body{
+	background-color:beige !important;
+}
+
+h2{
+	padding-top: 10% !important; 
+	padding-bottom: 2%;
+}
+
+.table-wallet {
+	padding-top: 12%;
+	padding-right: 5% !important;
+	padding-left: 5%;
+}
+
+.table-wallet h1{
+	padding-bottom: 5%;
+}
+
+.operaciones{
+	padding-top: 5%;
+	padding-right: 5% !important;
+	padding-left: 5%;
+}
+
+.operaciones h1{
+	padding-bottom: 3%;
+}
+
+.operaciones a{
+	padding-bottom: 3% !important;
+	padding-right: 5% !important;
+
+}
+
+.col-md-4{
+	padding-top: 2%;
+}
+
+.mb-3{
+	padding-top: 2%;
+	padding-left: 1%;
+}
+
+.cargar {
+	margin-left: 2%;
+	padding-top: 12%;
+	padding-left: 5%;
+}
+
+.form-login .container {
+	max-width: 23%; 
+	padding-top: 10%,
+}
